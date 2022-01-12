@@ -1,0 +1,117 @@
+#page-login {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 20s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+
+    form {
+        background: #fff;
+        width: 40%;
+        padding: 4rem;
+
+        header {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 4rem;
+            font: 700 1.5rem "Poppins", sans-serif;
+        }
+
+        .insert-data {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: #000;
+                padding-top: 1rem;
+                font: 400 1.25rem "Poppins", sans-serif;
+            }
+
+            input {
+                border: none;
+                border-bottom: 1px solid gray;
+                padding: 1rem;
+                font: 400 1rem "Poppins", sans-serif;
+            }
+
+            .forgot-password {
+                margin-left: auto;
+                color: #000;
+                padding: 1rem;
+                font: 600 1rem "Poppins", sans-serif;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 1rem;
+                font: 600 1rem "Poppins", sans-serif;
+                border: none;
+                border-radius: 2rem;
+                background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+                color: #fff;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .sign-another {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 3rem;
+
+            label {
+                font: 600 1rem "Poppins", sans-serif;
+            }
+
+            .icons {
+                margin-top: 1.5rem;
+            }
+        }
+
+        .sign-up {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 6rem;
+
+            label {
+                font: 600 1rem "Poppins", sans-serif;
+            }
+
+            a {
+                font: 400 1rem "Poppins", sans-serif;
+                margin-top: 1rem;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    @keyframes change {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+}
